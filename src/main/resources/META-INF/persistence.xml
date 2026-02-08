@@ -1,0 +1,10 @@
+
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.2">
+  <persistence-unit name="BankPU" transaction-type="JTA">
+    <jta-data-source>java:/jdbc/BankDS</jta-data-source>
+    <properties>
+      <property name="hibernate.hbm2ddl.auto" value="none"/>
+      <property name="hibernate.show_sql" value="false"/>
+    </properties>
+  </persistence-unit>
+</persistence>
